@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'fancy css',
-  tagline: 'Dinosaurs are cool',
+  tagline: '',
   url: 'https://damon0121.github.io',
   baseUrl: '/fancy-css/',
   onBrokenLinks: 'throw',
@@ -12,7 +12,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'damon0121', // Usually your GitHub org/user name.
   projectName: 'fancy-css', // Usually your repo name.
-  trailingSlash:false,
+  trailingSlash: true,
   themeConfig: {
     navbar: {
       title: 'fancy css',
@@ -27,7 +27,6 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/damon0121/fancy-css',
           label: 'GitHub',

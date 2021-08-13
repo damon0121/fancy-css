@@ -1,14 +1,20 @@
-import Loader from '../../src/components/loaders/bouncing-loader'
+import Loader from "../../src/components/loaders/bouncing-loader";
 
 # bouncing-loader
 
+## 效果
+
+<Loader />
+
 ## 思路
+
+利用 `translate3d` 做上下运动，`animation-direction` 要设为 `alternate`，否则运动到上方后会瞬间回落到下方。后两个 `div` 设置动画延时形成落差效果。
 
 ```html
 <div class="bouncing-loader">
-  <div></div>
-  <div></div>
-  <div></div>
+  <div style={{'--i': 0}}></div>
+  <div style={{'--i': 1}}></div>
+  <div style={{'--i': 2}}></div>
 </div>
 ```
 
@@ -25,12 +31,7 @@ import Loader from '../../src/components/loaders/bouncing-loader'
   margin: 2px;
   animation: bouncing 0.6s infinite;
   animation-direction: alternate;
-}
-.bouncing-loader div:nth-of-type(2) {
-  animation-delay: 0.2s;
-}
-.bouncing-loader div:nth-of-type(3) {
-  animation-delay: 0.4s;
+  animation-delay: calc(0.2s * var(--i));
 }
 @keyframes bouncing {
   0% {
@@ -42,5 +43,3 @@ import Loader from '../../src/components/loaders/bouncing-loader'
   }
 }
 ```
-## 效果
-<Loader />
