@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfancy_css=self.webpackChunkfancy_css||[]).push([[865],{6778:function(s){s.exports=JSON.parse('{"allTagsPath":"/fancy-css/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/fancy-css/blog/tags/facebook"}')}}]);

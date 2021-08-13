@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfancy_css=self.webpackChunkfancy_css||[]).push([[332],{2041:function(s){s.exports=JSON.parse('{"allTagsPath":"/fancy-css/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/fancy-css/blog/tags/hello"}')}}]);
