@@ -10,7 +10,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'damon', // Usually your GitHub org/user name.
+  organizationName: 'damon0121', // Usually your GitHub org/user name.
   projectName: 'fancy-css', // Usually your repo name.
   trailingSlash:false,
   themeConfig: {
