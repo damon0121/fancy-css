@@ -4,7 +4,9 @@
   align-items: center;
   justify-content: center;
 }
-
+.container *{
+  box-sizing: border-box;
+}
 .ripple-loader {
   position: relative;
   height: 64px;
@@ -15,6 +17,8 @@
 .ripple-loader::before {
   content: '';
   position: absolute;
+  top: 32px;
+  left: 32px;
   border-radius: 50%;
   border: 4px solid #454ADE;
   animation: ripple-loader 1s ease-out infinite;
